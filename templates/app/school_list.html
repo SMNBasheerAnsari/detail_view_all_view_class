@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>this is list of school objects</h1>
+        {% for sch in allSO %}
+           <a href="{{sch.pk}}"> <h1>{{sch.sc_name}}</h1></a>
+        {% endfor %}
+    </center>
+</body>
+</html>
